@@ -4,9 +4,11 @@
 const express = require('express');
 const http = require('http');
 const morgan = require('morgan');
-const bodyParser = require('body-parser');                        
+const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
+//employee model from the models folder
+const Employee = require('./models/employee');
 
 /**
  * App configurations
@@ -21,10 +23,10 @@ app.use('/', express.static(path.join(__dirname, '../dist/nodebucket')));
 /**
  * Variables
  */
-const port = 3000; // server port
+const port = process.env.PORT || 3000; // server port
 
 // TODO: This line will need to be replaced with your actual database connection string
-const conn = 'mongodb+srv://superadmin:s3cret@cluster0-lujih.mongodb.net/nodebucket?retryWrites=true&w=majority';
+const conn = 'mongodb+srv://billyrtalley:WEB450@buwebdev-cluster-1.wmilj.mongodb.net/nodebucket?retryWrites=true&w=majority';
 
 /**
  * Database connection
