@@ -1,6 +1,12 @@
-/**
- * Require statements
- */
+/*
+============================================
+; Title: nodebucket Sprint1
+; Author: Professor Krasso
+; Date: March 26, 2022
+; Modified By: William Talley
+; Description: nodebucket app.js component file
+;===========================================
+*/
 const express = require("express");
 const http = require("http");
 const morgan = require("morgan");

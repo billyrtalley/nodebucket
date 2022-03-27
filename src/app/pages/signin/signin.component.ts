@@ -1,3 +1,13 @@
+/*
+============================================
+; Title: nodebucket Sprint1
+; Author: Professor Krasso
+; Date: March 26, 2022
+; Modified By: William Talley
+; Description: nodebucket sign-in component file
+;===========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';

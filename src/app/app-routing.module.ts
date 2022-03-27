@@ -1,3 +1,14 @@
+/*
+============================================
+; Title: Exercise 9.3 Form Validation
+; Author: Professor Krasso
+; Date: March 2, 2022
+; Modified By: William Talley
+; Description: Bob's Computer Repair Shop App app routing module
+;
+;===========================================
+*/
+
 import { HomeComponent } from './pages/home/home.component';
 import { BaseLayoutComponent } from './shared/base-layout/base-layout.component';
 import { NgModule } from '@angular/core';

@@ -1,3 +1,12 @@
+/*
+============================================
+; Title: nodebucket Sprint1
+; Author: Professor Krasso
+; Date: March 26, 2022
+; Modified By: William Talley
+; Description: nodebucket app.module file
+;===========================================
+*/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 

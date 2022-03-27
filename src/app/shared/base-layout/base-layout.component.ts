@@ -1,3 +1,13 @@
+/*
+============================================
+; Title: nodebucket Sprint1
+; Author: Professor Krasso
+; Date: March 26, 2022
+; Modified By: William Talley
+; Description: nodebucket base-layout component file
+;===========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
 export class BaseLayoutComponent implements OnInit {
 
   year: number = Date.now();
-  
+
   constructor() { }
 
   ngOnInit(): void {

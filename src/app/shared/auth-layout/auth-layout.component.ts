@@ -1,3 +1,13 @@
+/*
+============================================
+; Title: nodebucket Sprint1
+; Author: Professor Krasso
+; Date: March 26, 2022
+; Modified By: William Talley
+; Description: nodebucket auth-layout component file
+;===========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
