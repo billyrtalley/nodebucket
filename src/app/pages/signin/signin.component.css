@@ -1,0 +1,36 @@
+
+
+.signin-container {
+  width: 35%;
+  margin: 15% auto;
+  background-color: #EDE7F6;
+  border: 1px solid #311B92;
+}
+
+.signin-error {
+  margin: 40px 0;
+  padding: 18;
+  padding-left: 15px;
+  color: #311B92;
+  font-size: 24px;
+
+}
+
+button {
+  background-color: #311B92;
+  color: #FFFFFF;
+
+
+}
+
+.signin-container, mat-card-title, mat-card-subtitle {
+  text-align: center;
+  border-radius: 5px;
+}
+
+mat-card-title, mat-card-subtitle {
+  width: 100%;
+  padding: 5px;
+}
+
+
