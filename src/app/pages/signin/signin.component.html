@@ -5,7 +5,12 @@
     </div>
 
     <mat-card class="mat-elevation-z8 signin-container" fxFlex>
-      <mat-card-title>Employee Sign-in Page</mat-card-title>
+
+      <mat-card-title>
+        <img height="70px" width="auto" src="../../../assets/nodebucketLogo.png"/>
+        <br /><br />
+        Employee Sign-in Page
+      </mat-card-title>
       <mat-card-subtitle>Please enter your four digit employee ID</mat-card-subtitle>
 
       <form [formGroup]="form" (ngSubmit)="login(); form.reset();">
