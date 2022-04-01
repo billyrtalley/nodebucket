@@ -1,8 +1,8 @@
 /*
 ============================================
-; Title: nodebucket Sprint1
+; Title: nodebucket Sprint2
 ; Author: Professor Krasso
-; Date: March 26, 2022
+; Date: March 30, 2022
 ; Modified By: William Talley
 ; Description: nodebucket app.js component file
 ;===========================================
@@ -15,6 +15,9 @@ const path = require("path");
 const mongoose = require("mongoose");
 //employee model from the models folder
 const Employee = require("./models/employee");
+// const employee = require("./models/employee");
+
+
 
 /**
  * App configurations
@@ -53,8 +56,10 @@ mongoose
 
 /**
  * API(s) go here...
+ * findEmployeeById
  */
 app.get("/api/employees/:empId", async (req, res) => {
+  console.log('the findEmployeeById API is working');
   try {
     Employee.findOne({ empId: req.params.empId }, function (err, employee) {
       if (err) {
@@ -70,10 +75,64 @@ app.get("/api/employees/:empId", async (req, res) => {
   } catch (e) {
     console.log(e);
     res.status(500).send({
-      message: "Internal server error",
+      'message': "Internal server error."
     });
   }
 });
+
+// findAllTasks
+app.get('/api/employees/:empId/tasks', async(req, res) => {
+  console.log('the findAllTasks API is working');
+  try{
+    Employee.findOne({'empId': req.params.empId}, 'empId toDo.taskName done.taskName', function(err, employee) {
+      if(err) {
+        console.log(err);
+        res.status(501).send({
+          'message': "Internal server error."
+        })
+      } else {
+        console.log(employee);
+        res.json(employee);
+      }
+    })
+  } catch (e) {
+    console.log(e);
+    res.status(500).send({
+      'message': "Internal server error."
+    })
+  }
+})
+
+// create Task
+
+// app.post('/api/employees/:empId/task', async(req, res)=> {
+//   console.log('the createTask API is working');
+//   try {
+//     const newItem = {
+
+//       taskName: req.body.taskName,
+//       dueDate: req.body.dueDate,
+//       priority: req.body.priority,
+//       status: req.body.status
+//     }
+//      Employee.findOne({_id: req.params.empId}, function(err, item) {
+//       if(err) {
+//         res.status(501).send({
+//           'message': "Internal server error."
+//         })
+//       } else {
+//         console.log(item);
+//         item.task.push(newItem);
+//         Employee.update(item);
+//       }
+//     });
+//   } catch (e) {
+//     console.log(e);
+//     res.status(500).send({
+//       'message': "Internal server error."
+//     })
+//   }
+// })
 
 /**
  * Create and start server

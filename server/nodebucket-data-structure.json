@@ -1,210 +1,210 @@
 [
-    {
-      "empId": 1007,
-      "first_name": "Ron",
-      "last_name": "Burgundy",
-      "jobTitle": "Data Analyst",
-      "toDo": [
-        {
-            "taskNumber": "101",
-            "taskName": "Clean data",
-            "dueDate": "6/01/2022",
-            "priority": "low",
-            "status": "not started"
-        },
-        {
+  {
+    "empId": 1007,
+    "first_name": "Ron",
+    "last_name": "Burgundy",
+    "jobTitle": "Data Analyst",
+    "toDo": [
+      {
+          "taskNumber": "101",
+          "taskName": "Clean data",
+          "dueDate": "6/01/2022",
+          "priority": "low",
+          "status": "not started"
+      },
+      {
 
-            "taskNumber": "102",
-            "taskName": "Build visualization dashboard",
-            "dueDate": "6/10/2022",
-            "priority": "medium",
-            "status": "not started"
-        }
-      ],
-      "done": [
-        {
-            "taskNumber": "103",
-            "taskName": "Clean folder directory",
-            "dueDate": "6/10/2022",
-            "priority": "low",
-            "status": "done"
-        }
+          "taskNumber": "102",
+          "taskName": "Build visualization dashboard",
+          "dueDate": "6/10/2022",
+          "priority": "medium",
+          "status": "not started"
+      }
+    ],
+    "done": [
+      {
+          "taskNumber": "103",
+          "taskName": "Clean folder directory",
+          "dueDate": "6/10/2022",
+          "priority": "low",
+          "status": "done"
+      }
 
-      ]
-    },
-    {
-      "empId": 1008,
-      "first_name": "Brian",
-      "last_name": "Fantana",
-      "jobTitle": "Accountant",
-      "toDo": [
-        {
-            "taskNumber": "106",
-            "taskName": "Write budget report",
-            "dueDate": "6/15/2022",
-            "priority": "high",
-            "status": "in-progress"
-        },
-        {
-            "taskNumber": "108",
-            "taskName": "Settle expense account",
-            "dueDate": "6/25/2022",
-            "priority": "medium",
-            "status": "not-started"
-        }
-      ],
-      "done": [
-        {
-            "taskNumber": "107",
-            "taskName": "Attend HR training",
-            "dueDate": "6/11/2022",
-            "priority": "low",
-            "status": "done"
-        }
+    ]
+  },
+  {
+    "empId": 1008,
+    "first_name": "Brian",
+    "last_name": "Fantana",
+    "jobTitle": "Accountant",
+    "toDo": [
+      {
+          "taskNumber": "106",
+          "taskName": "Write budget report",
+          "dueDate": "6/15/2022",
+          "priority": "high",
+          "status": "in-progress"
+      },
+      {
+          "taskNumber": "108",
+          "taskName": "Settle expense account",
+          "dueDate": "6/25/2022",
+          "priority": "medium",
+          "status": "not-started"
+      }
+    ],
+    "done": [
+      {
+          "taskNumber": "107",
+          "taskName": "Attend HR training",
+          "dueDate": "6/11/2022",
+          "priority": "low",
+          "status": "done"
+      }
 
-      ]
-    },
-    {
-      "empId": 1009,
-      "first_name": "Brick",
-      "last_name": "Tamland",
-      "jobTitle": "Maintenance Manager",
-      "toDo": [
-        {
-            "taskNumber": "222",
-            "taskName": "Repair front door",
-            "dueDate": "5/15/2022",
-            "priority": "high",
-            "status": "not-started"
-        },
-        {
-            "taskNumber": "223",
-            "taskName": "Reset alarm codes",
-            "dueDate": "6/1/2022",
-            "priority": "medium",
-            "status": "in-progress"
-        }
-      ],
-      "done": [
-        {
-            "taskNumber": "224",
-            "taskName": "Install new HVAC",
-            "dueDate": "5/15/2022",
-            "priority": "high",
-            "status": "done"
-        },
-        {
-          "text": "Wash windows"
-        }
-      ]
-    },
-    {
-      "empId": 1010,
-      "first_name": "Champ",
-      "last_name": "Kind",
-      "jobTitle": "Human Resource Specialist",
-      "toDo": [
-        {
-            "taskNumber": "155",
-            "taskName": "Organize new hire training",
-            "dueDate": "6/25/2022",
-            "priority": "high",
-            "status": "in-progress"
-        },
-        {
-            "taskNumber": "157",
-            "taskName": "Review employee surveys",
-            "dueDate": "5/05/2022",
-            "priority": "low",
-            "status": "not-started"
-        }
-      ],
-      "done": [
-        {
-            "taskNumber": "158",
-            "taskName": "Review company hiring policies",
-            "dueDate": "5/1/2022",
-            "priority": "high",
-            "status": "done"
-        },
-        {
-            "taskNumber": "156",
-            "taskName": "Edit EO report",
-            "dueDate": "4/15/2022",
-            "priority": "medium",
-            "status": "done"
-        }
-      ]
-    },
-    {
-      "empId": 1011,
-      "first_name": "Dorothy",
-      "last_name": "Mantooth",
-      "jobTitle": "Vice President of Marketing",
-      "toDo": [
-        {
-            "taskNumber": "78",
-            "taskName": "Oversee focus group",
-            "dueDate": "5/01/2022",
-            "priority": "low",
-            "status": "not-started"
-        },
-        {
-            "taskNumber": "79",
-            "taskName": "Approve advertising budget",
-            "dueDate": "5/01/2022",
-            "priority": "medium",
-            "status": "not-started"
-        }
-      ],
-      "done": [
-        {
-            "taskNumber": "80",
-            "taskName": "Review quarterly report",
-            "dueDate": "4/10/2022",
-            "priority": "medium",
-            "status": "done"
-        },
-        {
-            "taskNumber": "77",
-            "taskName": "Seafood dinner with clients",
-            "dueDate": "4/1/2022",
-            "priority": "high",
-            "status": "done"
-        }
-      ]
-    },
-    {
-      "empId": 1012,
-      "first_name": "Veronica",
-      "last_name": "Corningstone",
-      "jobTitle": "Public Affairs strategist",
-      "toDo": [
-        {
-            "taskNumber": "100",
-            "taskName": "Revise social media campaign",
-            "dueDate": "5/10/2022",
-            "priority": "medium",
-            "status": "not-started"
-        },
-        {
-            "taskNumber": "102",
-            "taskName": "Draft CEO speech",
-            "dueDate": "4/05/2022",
-            "priority": "high",
-            "status": "in-progress"
-        }
-      ],
-      "done": [
-        {
-            "taskNumber": "101",
-            "taskName": "Publish company news letter",
-            "dueDate": "4/1/2022",
-            "priority": "high",
-            "status": "done"
-        }
+    ]
+  },
+  {
+    "empId": 1009,
+    "first_name": "Brick",
+    "last_name": "Tamland",
+    "jobTitle": "Maintenance Manager",
+    "toDo": [
+      {
+          "taskNumber": "222",
+          "taskName": "Repair front door",
+          "dueDate": "5/15/2022",
+          "priority": "high",
+          "status": "not-started"
+      },
+      {
+          "taskNumber": "223",
+          "taskName": "Reset alarm codes",
+          "dueDate": "6/1/2022",
+          "priority": "medium",
+          "status": "in-progress"
+      }
+    ],
+    "done": [
+      {
+          "taskNumber": "224",
+          "taskName": "Install new HVAC",
+          "dueDate": "5/15/2022",
+          "priority": "high",
+          "status": "done"
+      },
+      {
+        "text": "Wash windows"
+      }
+    ]
+  },
+  {
+    "empId": 1010,
+    "first_name": "Champ",
+    "last_name": "Kind",
+    "jobTitle": "Human Resource Specialist",
+    "toDo": [
+      {
+          "taskNumber": "155",
+          "taskName": "Organize new hire training",
+          "dueDate": "6/25/2022",
+          "priority": "high",
+          "status": "in-progress"
+      },
+      {
+          "taskNumber": "157",
+          "taskName": "Review employee surveys",
+          "dueDate": "5/05/2022",
+          "priority": "low",
+          "status": "not-started"
+      }
+    ],
+    "done": [
+      {
+          "taskNumber": "158",
+          "taskName": "Review company hiring policies",
+          "dueDate": "5/1/2022",
+          "priority": "high",
+          "status": "done"
+      },
+      {
+          "taskNumber": "156",
+          "taskName": "Edit EO report",
+          "dueDate": "4/15/2022",
+          "priority": "medium",
+          "status": "done"
+      }
+    ]
+  },
+  {
+    "empId": 1011,
+    "first_name": "Dorothy",
+    "last_name": "Mantooth",
+    "jobTitle": "Vice President of Marketing",
+    "toDo": [
+      {
+          "taskNumber": "78",
+          "taskName": "Oversee focus group",
+          "dueDate": "5/01/2022",
+          "priority": "low",
+          "status": "not-started"
+      },
+      {
+          "taskNumber": "79",
+          "taskName": "Approve advertising budget",
+          "dueDate": "5/01/2022",
+          "priority": "medium",
+          "status": "not-started"
+      }
+    ],
+    "done": [
+      {
+          "taskNumber": "80",
+          "taskName": "Review quarterly report",
+          "dueDate": "4/10/2022",
+          "priority": "medium",
+          "status": "done"
+      },
+      {
+          "taskNumber": "77",
+          "taskName": "Seafood dinner with clients",
+          "dueDate": "4/1/2022",
+          "priority": "high",
+          "status": "done"
+      }
+    ]
+  },
+  {
+    "empId": 1012,
+    "first_name": "Veronica",
+    "last_name": "Corningstone",
+    "jobTitle": "Public Affairs strategist",
+    "toDo": [
+      {
+          "taskNumber": "100",
+          "taskName": "Revise social media campaign",
+          "dueDate": "5/10/2022",
+          "priority": "medium",
+          "status": "not-started"
+      },
+      {
+          "taskNumber": "102",
+          "taskName": "Draft CEO speech",
+          "dueDate": "4/05/2022",
+          "priority": "high",
+          "status": "in-progress"
+      }
+    ],
+    "done": [
+      {
+          "taskNumber": "101",
+          "taskName": "Publish company news letter",
+          "dueDate": "4/1/2022",
+          "priority": "high",
+          "status": "done"
+      }
 
-      ]
-    }
+    ]
+  }
 
-  ]
+]

@@ -4,18 +4,18 @@
 ; Author: Professor Krasso
 ; Date: March 30, 2022
 ; Modified By: William Talley
-; Description: nodebucket auth-layout component file
+; Description: nodebucket contact.component file
 ;===========================================
 */
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-auth-layout',
-  templateUrl: './auth-layout.component.html',
-  styleUrls: ['./auth-layout.component.css']
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
 })
-export class AuthLayoutComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   constructor() { }
 

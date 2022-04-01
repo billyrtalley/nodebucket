@@ -1,8 +1,8 @@
 /*
 ============================================
-; Title: nodebucket Sprint1
+; Title: nodebucket Sprint2
 ; Author: Professor Krasso
-; Date: March 26, 2022
+; Date: March 30, 2022
 ; Modified By: William Talley
 ; Description: nodebucket sign-in component file
 ;===========================================
@@ -38,10 +38,11 @@ export class SigninComponent implements OnInit {
   login() {
     const empId = this.form.controls['empId'].value;
 
-    this.http.get('/api/employees/' + empId).subscribe(res =>
+    this.http.get('/api/employees/' + empId).subscribe((res) =>
       {
         if(res)
         {
+          console.log(empId);
           this.cookieService.set('session_user', empId, 1);
           this.router.navigate(['/']);
         }

@@ -4,18 +4,18 @@
 ; Author: Professor Krasso
 ; Date: March 30, 2022
 ; Modified By: William Talley
-; Description: nodebucket auth-layout component file
+; Description: nodebucket not-found.component file
 ;===========================================
 */
 
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-auth-layout',
-  templateUrl: './auth-layout.component.html',
-  styleUrls: ['./auth-layout.component.css']
+  selector: 'app-not-found',
+  templateUrl: './not-found.component.html',
+  styleUrls: ['./not-found.component.css']
 })
-export class AuthLayoutComponent implements OnInit {
+export class NotFoundComponent implements OnInit {
 
   constructor() { }
 

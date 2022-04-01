@@ -1,8 +1,8 @@
 /*
 ============================================
-; Title: nodebucket Sprint1
+; Title: nodebucket Sprint2
 ; Author: Professor Krasso
-; Date: March 26, 2022
+; Date: March 30, 2022
 ; Modified By: William Talley
 ; Description: nodebucket app.module file
 ;===========================================
@@ -26,6 +26,8 @@ import { SigninComponent } from './pages/signin/signin.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { MatInputModule } from '@angular/material/input';
     HomeComponent,
     BaseLayoutComponent,
     AuthLayoutComponent,
-    SigninComponent
+    SigninComponent,
+    NotFoundComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
