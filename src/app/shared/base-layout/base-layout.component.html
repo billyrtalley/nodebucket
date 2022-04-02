@@ -1,18 +1,19 @@
 <div fxLayout="column">
-
+   <!-- logo -->
+  <div class="logo">
+    <img class="bucket" src="../../../assets/nodebucketLogo.png" routerLink="/home">
+  </div>
+  <h1 class="title">nodebucket</h1>
     <!-- navigation -->
     <nav fxFlex>
       <mat-toolbar>
         <!-- navbar container -->
         <div class="navbar-container">
-          <!-- logo -->
-          <div class="logo">
-            <img class="bucket" src="../../../assets/nodebucketLogo.png" routerLink="/home">
-          </div>
 
           <button class="navbar-link" routerLink="/" mat-button>Home</button>
           <button class="navbar-link" mat-button>About</button>
           <button class="navbar-link" routerLink="/contact" mat-button>Contact Us</button>
+
         </div>
 
         <div fxFlex></div>
@@ -26,12 +27,12 @@
           <mat-menu #profileMenu>
             <p style="padding: 10px;">Signed in as {{ name }}</p>
             <mat-divider></mat-divider>
-            <button mat-menu-item (click)="signOut()" color="primary">
+            <button mat-menu-item (click)="signOut()">
               <span>Sign out</span>
             </button>
           </mat-menu>
         </div>
-<!-- LEFT ON HERE ON 3/30/2022 -->
+
       </mat-toolbar>
     </nav>
 

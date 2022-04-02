@@ -1,14 +1,17 @@
-<div fxLayout="column">
+<div class="main-bucket" fxLayout="column">
 
   <mat-card fxFlex style="margin-top: 10%; width: 50%; margin-left: 18%;" class="mat-elevation-z0">
 
     <mat-card-title>
       <h1>404 Sorry, page not found</h1>
-      <img src="../../../assets/sci-fi.gif" />
+      <div class="gif-container">
+      <img class="not-found-pic" src="../../../assets/sci-fi.gif" />
+      </div>
+      <br /><br />
       <h2 class="not-found-page">Oh the humanity! Return home before you are trapped in this wasteland forever!</h2>
     </mat-card-title>
 
-    <mat-card-content style="text-align: center; padding-left: 30%;">
+    <mat-card-content style="text-align: center; padding-left: 30px;">
       <button mat-raised-button color="primary" routerLink="/">Return Home</button>
     </mat-card-content>
 

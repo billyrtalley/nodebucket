@@ -1,4 +1,32 @@
+:root {
+  --gradient: linear-gradient(150deg,
+    #F0F0F0,
+    #EDE7F6,
+    #DFE0FA,
+    #311B92
+  );
+  --gradient2: linear-gradient(
+  #F0F0F0,
+  #EDE7F6
+  );
+}
 
+.main-bucket {
+  background-image: var(--gradient);
+  animation: bg-animation 5s infinite alternate;
+  background-size: 150%;
+  animation: bg-animation 15s infinite alternate;
+}
+
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
 
 .signin-container {
   width: 35%;

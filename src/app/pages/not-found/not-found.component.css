@@ -5,8 +5,58 @@
 button {
   background-color: #311B92;
   color: #FFFFFF;
+  padding: 12px;
+}
 
 
+:root {
+  --gradient: linear-gradient(150deg,
+    #F0F0F0,
+    #EDE7F6,
+    #DFE0FA,
+    #311B92
+  );
+  --gradient2: linear-gradient(
+  #F0F0F0,
+  #EDE7F6
+  );
+}
+
+body {
+  background-image: var(--gradient);
+  animation: bg-animation 5s infinite alternate;
+  background-size: 150%;
+  animation: bg-animation 15s infinite alternate;
+}
+
+.not-found-pic {
+  justify-content: center;
+  padding: 12px;
+  width: 80%;
+  height: auto;
+}
+
+.gif-container {
+  justify-content: center;
+  padding: 5px;
+
+}
+
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+mat-card {
+  box-shadow: 2px 2px #EDE7F6;
+  justify-content: center;
+  background-color: #EDE7F6;
+  border: 1px solid #311B92;
 }
 
 

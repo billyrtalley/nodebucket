@@ -1,14 +1,57 @@
+:root {
+  --gradient: linear-gradient(150deg,
+    #F0F0F0,
+    #EDE7F6,
+    #DFE0FA,
+    #311B92
+  );
+  --gradient2: linear-gradient(
+  #F0F0F0,
+  #EDE7F6
+  );
+}
+
 .main-welcome {
-    margin-top: 30px;
+  margin-top: 30px;
+  background-image: var(--gradient);
+  animation: bg-animation 5s infinite alternate;
+  background-size: 150%;
+  animation: bg-animation 15s infinite alternate;
   }
-  
+
+  @keyframes bg-animation {
+    0% {
+      background-position: left;
+    }
+    100% {
+      background-position: right;
+    }
+  }
+
   .title {
     text-align: center;
-    font-weight: lighter;
+    color:#311B92;
   }
-  
+
   .subtitle {
     text-align: center;
     font-size: 14px;
+    color:#311B92;
   }
-  
+
+  .task-container {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  .task {
+    overflow: hidden;
+    color: #311B92;
+    background: #EDE7F6;
+    border: 1px solid #311B92;
+    overflow: hidden;
+  }
+
+  mat-card-title, mat-card-subtitle {
+    color:#311B92
+  }

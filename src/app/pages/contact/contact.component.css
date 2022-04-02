@@ -1,0 +1,12 @@
+p {
+  font-size: 14px;
+  color: #311B92;
+}
+
+div, mat-card {
+  background-color: #EDE7F6;
+}
+
+div {
+  border: 1px solid #311B92;
+}

@@ -28,6 +28,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CreateTaskDialogComponent } from './shared/create-task-dialog/create-task-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     AuthLayoutComponent,
     SigninComponent,
     NotFoundComponent,
-    ContactComponent
+    ContactComponent,
+    CreateTaskDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     ReactiveFormsModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

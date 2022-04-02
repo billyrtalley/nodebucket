@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Add a new task</h1>
+
+  <mat-dialog-content [formGroup]="taskForm">
+
+    <mat-form-field style="width: 250px;">
+      <input type="text" placeholder="Enter the new task name" matInput formControlName="text" (keydown.enter)="createTask()"/>
+    </mat-form-field>
+  </mat-dialog-content>
+
+
+  <div mat-dialog-actions float="right">
+    <button mat-raised-button color="primary" (click)="cancel()">Cancel</button>
+    <button mat-raised-button color="primary" [disabled]="!taskForm.valid" (click)="createTask()">Create task</button>
+  </div>
+

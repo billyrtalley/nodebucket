@@ -1,7 +1,12 @@
+.title {
+  color:#311B92;
+}
+
 .bucket {
   height: 60px;
   width: auto;
   vertical-align: middle;
+  padding-top: 15px;
 }
 
   .navbar-container {
@@ -9,6 +14,7 @@
     background-color: #EDE7F6;
     color:#311B92;
     border-bottom: 1px solid #311B92;
+    width: 100%;
   }
 
   .navbar-link {
@@ -51,4 +57,12 @@
   mat-menu {
     color: #311B92;
     background-color: #EDE7F6;
+  }
+
+  button, p {
+    color: #311B92;
+  }
+
+  p {
+    font-size: 14px;
   }

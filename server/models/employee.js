@@ -9,30 +9,17 @@
 */
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
+const ItemDocument = require('./item');
 
-let toDoSchema = new Schema ({
-    taskNumber: { type: String },
-    taskName: { type : String },
-    dueDate: { type: String },
-    priority: { type: String },
-    status: { type: String }
-});
-
-let doneSchema = new Schema ({
-    taskNumber: { type: String },
-    taskName: { type : String },
-    dueDate: { type: String },
-    priority: { type: String },
-    status: { type: String }
-});
+// Schema for employee documents
 
 let employeeSchema = new Schema ({
     empId: { type: String, unique: true, dropDups: true },
-    firstName: { type: String },
-    lastName: { type: String },
+    first_name: { type: String },
+    last_name: { type: String },
     jobTitle: { type: String },
-    toDo: [toDoSchema],
-    done: [doneSchema]
+    toDo: [ItemDocument],
+    done: [ItemDocument]
   }, { collection: 'employees'})
 
   module.exports = mongoose.model('Employee', employeeSchema);
