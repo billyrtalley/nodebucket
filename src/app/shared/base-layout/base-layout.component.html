@@ -1,57 +1,72 @@
 <div fxLayout="column">
-   <!-- logo -->
-  <div class="logo">
-    <img class="bucket" src="../../../assets/nodebucketLogo.png" routerLink="/home">
-  </div>
-  <h1 class="title">nodebucket</h1>
-    <!-- navigation -->
-    <nav fxFlex>
-      <mat-toolbar>
-        <!-- navbar container -->
-        <div class="navbar-container">
 
-          <button class="navbar-link" routerLink="/" mat-button>Home</button>
-          <button class="navbar-link" mat-button>About</button>
-          <button class="navbar-link" routerLink="/contact" mat-button>Contact Us</button>
 
+
+  <!-- navigation -->
+  <nav fxFlex>
+
+
+    <mat-toolbar>
+      <!-- navbar container -->
+      <div class="navbar-container">
+        <!-- logo -->
+        <div class="logo">
+          <img
+            class="bucket"
+            src="../../../assets/nodebucketLogo.png"
+            routerLink="/home"
+          />
+          <h1 class="title">nodebucket</h1>
         </div>
-
-        <div fxFlex></div>
-
+        <button class="navbar-link" routerLink="/" mat-button>Home</button>
+        <button class="navbar-link" mat-button>About</button>
+        <button class="navbar-link" routerLink="/contact" mat-button>
+          Contact Us
+        </button>
+        <!-- employee profile pop up menu -->
         <div *ngIf="isLoggedIn">
-
-          <button mat-icon-button [matMenuTriggerFor]="profileMenu" aria-label="User profile menu">
+          <button
+            mat-icon-button
+            [matMenuTriggerFor]="profileMenu"
+            aria-label="User profile menu"
+          >
             <mat-icon color="primary">face</mat-icon>
           </button>
 
           <mat-menu #profileMenu>
-            <p style="padding: 10px;">Signed in as {{ name }}</p>
+            <p class="emp-profile" style="padding: 10px">
+              Signed in as {{ name }}
+            </p>
             <mat-divider></mat-divider>
             <button mat-menu-item (click)="signOut()">
               <span>Sign out</span>
             </button>
           </mat-menu>
         </div>
+      </div>
 
-      </mat-toolbar>
-    </nav>
+      <div fxFlex></div>
+    </mat-toolbar>
+  </nav>
 
-    <!-- main content -->
-    <div fxFlex>
-      <main class="main-content" fxFlex="100%;">
-        <router-outlet></router-outlet>
-      </main>
-    </div>
-
-    <!-- footer -->
-    <div fxFlex>
-      <footer class="footer">
-        <mat-toolbar class="footer-content">
-          <p>
-            &copy; {{year | date: 'yyyy'}} - nodebucket - <a href="https://www.bellevue.edu/" class="bu-link" target="_blank">Bellevue University</a>
-          </p>
-        </mat-toolbar>
-      </footer>
-    </div>
-
+  <!-- main content -->
+  <div fxFlex>
+    <main class="main-content" fxFlex="100%;">
+      <router-outlet></router-outlet>
+    </main>
   </div>
+
+  <!-- footer -->
+  <div fxFlex>
+    <footer class="footer">
+      <mat-toolbar class="footer-content">
+        <p>
+          &copy; {{ year | date: "yyyy" }} - nodebucket -
+          <a href="https://www.bellevue.edu/" class="bu-link" target="_blank"
+            >Bellevue University</a
+          >
+        </p>
+      </mat-toolbar>
+    </footer>
+  </div>
+</div>

@@ -10,3 +10,7 @@ div, mat-card {
 div {
   border: 1px solid #311B92;
 }
+
+h2 {
+  color:#311B92;
+}

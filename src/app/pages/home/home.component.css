@@ -15,7 +15,7 @@
   margin-top: 30px;
   background-image: var(--gradient);
   animation: bg-animation 5s infinite alternate;
-  background-size: 150%;
+  background-size: 70%;
   animation: bg-animation 15s infinite alternate;
   }
 

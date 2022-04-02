@@ -63,10 +63,10 @@ router.get('/:empId/tasks', async(req, res) => {
 
 // create Task
 
-router.post('/api/employees/:empId/tasks', async(req, res) => {
+router.post('/:empId/tasks', async(req, res) => {
   try
   {
-    Employee.findOne({'empId': req.params.empId}, function(err, employee){
+    Employee.findOne({empId: req.params.empId}, function(err, employee) {
       if (err)
       {
         console.log(err);
@@ -78,9 +78,9 @@ router.post('/api/employees/:empId/tasks', async(req, res) => {
         console.log(employee);
 
         const newItem = {
-          text: req.body.text
+          taskName: req.body.taskName
         }
-        employee.todo.push(newItem);
+        employee.toDo.push(newItem);
 
         employee.save(function(err, updatedEmployee) {
           if (err)
