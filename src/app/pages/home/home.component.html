@@ -1,87 +1,76 @@
 <div fxLayout="column" class="main-welcome">
-    <br /><br />
+  <br /><br />
 
-    <div fxFlex>
+  <div fxFlex>
+    <h1 class="title">
+      Welcome to Billy Talley's WEB 450 nodebucket Project <br />
+      <span class="subtitle">
+        In the days to follow, nodebucket will add functionality and
+        improvements. Stay tuned!
+      </span>
+    </h1>
+  </div>
 
-      <h1 class="title">
-        Welcome to Billy Talley's WEB 450 nodebucket Project <br />
-        <span class="subtitle">
-          In the days to follow, nodebucket will add functionality and improvements. Stay tuned!
-        </span>
-      </h1>
+  <div fxFlex>
+    <div class="button-container" fxFlex="column" fxLayoutAlign="center center">
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="openCreateTaskDialog()"
+      >
+        Create New Task
+      </button>
     </div>
+  </div>
 
-    <div fxFlex>
+  <br /><br />
 
-      <div class="button-container" fxFlex="column" fxLayoutAlign="center center">
-        <button mat-raised-button color="primary" (click)="openCreateTaskDialog()">Create New Task</button>
-      </div>
-    </div>
+  <div fxFlex>
+    <div fxLayout="row" fxLayoutGap="15px" class="task-container">
+      <div fxFlex>
+        <mat-card class="mat-elevation=z8">
+          <mat-card-title>To Do</mat-card-title>
+          <mat-card-subtitle
+            >Drag and Drop to do tasks to the Done container when
+            complete</mat-card-subtitle>
 
-    <br /><br />
-
-    <div fxFlex>
-
-      <div fxLayout="row" fxLayoutGap="15px" class="task-container">
-        <div fxFlex>
-          <mat-card class="mat-elevation=z8">
-            <mat-card-title>To Do</mat-card-title>
-            <mat-card-subtitle>Drag and Drop to do tasks to the Done container when complete</mat-card-subtitle>
-
-            <mat-card-content>
-              <div class="task">
-                <div *ngFor="let item of toDo">
-                  <mat-card class="mat-elevation-z2 task-card">
-
-                    <mat-card-content>
-
-                      <div fxLayout="row">
-                        <div fxFlex>
-                          {{ item.taskName}}
-                        </div>
-                      </div>
-                    </mat-card-content>
-                  </mat-card>
-
-                </div>
-              </div>
-            </mat-card-content>
-
-          </mat-card>
-
-        </div>
-
-        <div fxFlex>
-
-          <mat-card class="mat-elevation=z8">
-
-            <mat-card-title>Done</mat-card-title>
-
-            <mat-card-content>
-
-              <div class="task">
-
-                <div *ngFor="let item of done">
-                  <mat-card class="mat-elevation-z2 task-card">
-
+          <mat-card-content>
+            <div class="task">
+              <div *ngFor="let item of toDo">
+                <mat-card class="mat-elevation-z2 task-card">
+                  <mat-card-content>
                     <div fxLayout="row">
-
                       <div fxFlex>
                         {{ item.taskName }}
                       </div>
-
                     </div>
-
-                  </mat-card>
-
-
-                </div>
-
+                  </mat-card-content>
+                </mat-card>
               </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
 
-            </mat-card-content>
-          </mat-card>
-        </div>
+      <div fxFlex>
+        <mat-card class="mat-elevation=z8">
+          <mat-card-title>Done</mat-card-title>
+
+          <mat-card-content>
+            <div class="task">
+              <div *ngFor="let item of done">
+                <mat-card class="mat-elevation-z2 task-card">
+                  <div fxLayout="row">
+                    <div fxFlex>
+                      {{ item.taskName }}
+                    </div>
+                  </div>
+                </mat-card>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
       </div>
     </div>
+  </div>
 </div>

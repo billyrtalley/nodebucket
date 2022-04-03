@@ -10,7 +10,7 @@ h2 {
 
 .card-container {
   width: 60%;
-  background-color: #EDE7F6;
+  background-color: transparent;
   justify-content: center;
   align-items: flex-end;
 }

@@ -21,14 +21,13 @@ nav {
   height: auto;
   padding: 10px;
   background-color: #EDE7F6;
-  border-bottom: 1px solid #311B92;
+
 }
 
   .navbar-container {
     padding: 5px;
     background-color: #EDE7F6;
     color:#311B92;
-    border-bottom: 1px solid #311B92;
     width: 100vw;
     align-items: center;
     /* justify-content: space-between; */
