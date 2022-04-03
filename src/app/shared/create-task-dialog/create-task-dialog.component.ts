@@ -1,3 +1,13 @@
+/*
+============================================
+; Title: nodebucket Sprint2
+; Author: Professor Krasso
+; Date: April 3, 2022
+; Modified By: William Talley
+; Description: nodebucket create task dialog component file
+;===========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef, MatDialogModule } from '@angular/material/dialog';
