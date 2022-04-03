@@ -1,50 +1,58 @@
-<div class="main-welcome" fxLayout="row wrap">
-
-  <div class="card-container" fxFlex>
-
-    <mat-card class="mat-elevation-z6">
+<div fxFlex>
+  <div fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="40px" class="card-container">
+    <mat-card class="mat-elevation-z2">
       <mat-card-title class="card-title-icon">
         <mat-icon color="primary">navigation</mat-icon>
       </mat-card-title>
-
-      <br />
-      <mat-card-content class="align-center">
-        <p>
-          1846 Oxley St.
-        </p>
-        <p>
-          South Pasadena, CA 91030
-        </p>
-      </mat-card-content>
+      <h5>Address</h5>
+      <p>1846 Oxley St.</p>
+      <p>South Pasadena, CA 91030</p>
     </mat-card>
-  </div>
 
-  <div class="card-container" fxFlex>
-    <mat-card class="mat-elevation-z6">
+    <mat-card class="mat-elevation-z2">
       <mat-card-title class="card-title-icon">
         <mat-icon color="primary">phone</mat-icon>
       </mat-card-title>
-
+      <h5>Phone</h5>
+      <p>555-867-5309</p>
+      <p>1-800-867-5309</p>
       <br />
+      <mat-card-title class="card-title-icon">
+        <mat-icon color="primary">email</mat-icon>
+      </mat-card-title>
+      <h5>Email</h5>
+      <p>customer_relations@nodebucket.com</p>
+    </mat-card>
 
-      <mat-card-content class="align-center">
-        <p>
-          Direct: 555-867-5309
-        </p>
-        <p>
-          Toll-free: 1-800-867-5309
-        </p>
-        <p>
-          email: customer_relations@nodebucket.com
-        </p>
-      </mat-card-content>
+    <mat-card class="mat-elevation-z2">
+      <mat-card-title class="card-title-icon">
+        <mat-icon color="primary">forum</mat-icon>
+      </mat-card-title>
+      <h5>Social Media</h5>
+
+      <div fxLayout="row">
+        <!-- <mat-icon class="social" color="primary">linkedin</mat-icon> -->
+        <img class="social" src="../../../assets/linkedpurple.png">
+        <p>linkedin.com/nodebucket</p>
+      </div>
+
+      <div fxLayout="row">
+        <mat-icon class="social" color="primary">facebook</mat-icon>
+        <p>facebook.com/nodebucket</p>
+      </div>
+
+      <div fxLayout="row">
+        <!-- <mat-icon svgIcon="twittericon" color="primary"></mat-icon> -->
+        <img class="social" src="../../../assets/twitterpurple.png">
+        <p>@nodebucket</p>
+      </div>
     </mat-card>
   </div>
-</div>
 
-<br /><br /><br />
-<div fxLayout="column">
-  <h2 style="text-align: center">
-    Smarter project management with nodebucket.
-  </h2>
+  <br /><br /><br />
+  <div fxLayout="column">
+    <h2 style="text-align: center">
+      Smarter project management with nodebucket.
+    </h2>
+  </div>
 </div>

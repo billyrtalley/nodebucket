@@ -11,8 +11,8 @@ h2 {
 .card-container {
   width: 60%;
   background-color: transparent;
-  justify-content: center;
-  align-items: flex-end;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 mat-card {
@@ -21,10 +21,17 @@ mat-card {
 
 .main-welcome {
   margin-top: 50px;
-  justify-content: center;
+  justify-content: space-between;
   width: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 
+}
+
+.social {
+  width: 18px;
+  height: 80%;
+  padding-right: 5px;
 }

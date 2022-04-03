@@ -1,34 +1,33 @@
 <div fxLayout="column">
-
-
-
   <!-- navigation -->
-  <nav fxFlex>
-
+  <nav>
     <mat-toolbar>
       <!-- navbar container -->
-      <div class="navbar-container" fxLayout="row">
-
-            <img
-              class="bucket"
-              src="../../../assets/nodebucketLogo.png"
-              routerLink="/home"
-            />
-            <h1 class="title">nodebucket</h1>
-
+      <div class="navbar-container" fxLayout="row" fxFlex>
+        <div fxLayoutAlign="start center" fxFlex="75">
+          <img
+            class="bucket"
+            src="../../../assets/nodebucketLogo.png"
+            routerLink="/home"
+          />
+          <h1 class="title">nodebucket</h1>
+        </div>
         <!-- </div> -->
-        <div class="button-container">
+        <div fxLayout="end center" fxFlex="20">
           <button class="navbar-link" routerLink="/" mat-button>Home</button>
           <button class="navbar-link" mat-button>About</button>
           <button class="navbar-link" routerLink="/contact" mat-button>
             Contact Us
           </button>
-      </div>
-      </div>
+        </div>
 
-      <div class="profile-container" fxFlex >
         <!-- employee profile pop up menu -->
-        <div *ngIf="isLoggedIn">
+        <div
+          class="profile-container"
+          fxLayoutAlign="end center"
+          fxFlex="5"
+          *ngIf="isLoggedIn"
+        >
           <button
             mat-icon-button
             [matMenuTriggerFor]="profileMenu"
@@ -48,7 +47,6 @@
           </mat-menu>
         </div>
       </div>
-
       <!-- <div fxFlex></div> -->
     </mat-toolbar>
   </nav>
