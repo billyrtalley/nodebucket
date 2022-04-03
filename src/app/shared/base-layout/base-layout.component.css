@@ -1,5 +1,9 @@
 .title {
   color:#311B92;
+  font-size: 48px;
+  margin-top: 10px;
+  margin-left: 15px;
+
 }
 
 .bucket {
@@ -7,6 +11,17 @@
   width: auto;
   vertical-align: middle;
   padding-top: 15px;
+  cursor: pointer;
+}
+
+
+
+nav {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: #EDE7F6;
+  border-bottom: 1px solid #311B92;
 }
 
   .navbar-container {
@@ -14,15 +29,23 @@
     background-color: #EDE7F6;
     color:#311B92;
     border-bottom: 1px solid #311B92;
-    width: 100%;
-
+    width: 100vw;
+    align-items: center;
+    /* justify-content: space-between; */
   }
 
   .navbar-link {
     font-size: 24px;
     font-weight: lighter;
     color: #311B92;
+    margin-top: 10px;
+
   }
+
+  .button-container {
+    justify-self: right;
+    justify-content: space-between;
+   }
 
   .main-content {
     padding-left: 30px;
@@ -55,9 +78,10 @@
     color: #FFA726;
   }
 
-  mat-menu {
+  mat-menu, mat-toolbar {
     color: #311B92;
     background-color: #EDE7F6;
+    width: 100%;
   }
 
   button, p {
@@ -70,7 +94,15 @@
 
   .emp-profile {
     color: #311B92;
-    background-color: #EDE7F6;
+    cursor: pointer;
+
   }
+
+  .profile-container{
+    background-color: #EDE7F6;
+
+  }
+
+
 
 

@@ -1,13 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --gradient: linear-gradient(150deg,
+    #F0F0F0,
+    #EDE7F6,
+    #DFE0FA,
+    /* #311B92 */
+  );
+  --gradient2: linear-gradient(
+  #F0F0F0,
+  #EDE7F6
+  );
 
+
+
+}
 html, body {
   height: 100%;
-  background-color: #F0F0F0;
+
 }
+
+
 body {
   margin: 0;
   /* font-family: Roboto, "Helvetica Neue", sans-serif; */
   font-family: 'Lato', sans-serif;
+  background-image: var(--gradient);
+
+  background-size: 150%;
+  animation: bg-animation 25s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 
@@ -26,4 +55,5 @@ body {
   padding-left: 100px;
   letter-spacing: 3px;
   color:#311B92;
+  background-color: #EDE7F6;
 }

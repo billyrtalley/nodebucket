@@ -40,18 +40,33 @@
   }
 
   .task-container {
-    width: 35%;
+    width: 45%;
     margin: 0 auto;
+
   }
 
   .task {
-    overflow: hidden;
+    display: block;
     color: #311B92;
     background: #EDE7F6;
     border: 1px solid #311B92;
     overflow: hidden;
+    min-height: 68px;
   }
 
   mat-card-title, mat-card-subtitle {
-    color:#311B92
+    color:#311B92;
   }
+
+.task-card {
+
+  cursor: move;
+  padding: 20px 10px;
+  min-height: 68px;
+  height: 68px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+
+

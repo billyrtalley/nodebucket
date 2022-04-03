@@ -80,6 +80,8 @@ router.post('/:empId/tasks', async(req, res) => {
         const newItem = {
           taskName: req.body.taskName
         }
+
+        console.log(newItem)
         employee.toDo.push(newItem);
 
         employee.save(function(err, updatedEmployee) {

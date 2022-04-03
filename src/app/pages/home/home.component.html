@@ -13,10 +13,12 @@
 
     <div fxFlex>
 
-      <div class="task container" fxFlex="column">
+      <div class="button-container" fxFlex="column" fxLayoutAlign="center center">
         <button mat-raised-button color="primary" (click)="openCreateTaskDialog()">Create New Task</button>
       </div>
     </div>
+
+    <br /><br />
 
     <div fxFlex>
 
@@ -29,7 +31,8 @@
             <mat-card-content>
               <div class="task">
                 <div *ngFor="let item of toDo">
-                  <mat-card class="mat-elevation-z2">
+                  <mat-card class="mat-elevation-z2 task-card">
+
                     <mat-card-content>
 
                       <div fxLayout="row">
@@ -59,7 +62,7 @@
               <div class="task">
 
                 <div *ngFor="let item of done">
-                  <mat-card class="mat-elevation-z2">
+                  <mat-card class="mat-elevation-z2 task-card">
 
                     <div fxLayout="row">
 

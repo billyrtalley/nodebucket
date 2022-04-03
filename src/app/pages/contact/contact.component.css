@@ -1,16 +1,30 @@
 p {
-  font-size: 14px;
   color: #311B92;
-}
-
-div, mat-card {
-  background-color: #EDE7F6;
-}
-
-div {
-  border: 1px solid #311B92;
+  font-size: 18px;
 }
 
 h2 {
-  color:#311B92;
+  color: #311B92;
+}
+
+
+.card-container {
+  width: 60%;
+  background-color: #EDE7F6;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+mat-card {
+  background-color: #EDE7F6;
+}
+
+.main-welcome {
+  margin-top: 50px;
+  justify-content: center;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
