@@ -23,7 +23,7 @@ body {
   /* font-family: Roboto, "Helvetica Neue", sans-serif; */
   font-family: 'Lato', sans-serif;
   background-image: var(--gradient);
-  animation: bg-animation 100s ease infinite;
+  animation: bg-animation 100s ease infinite alternate;
   height: 100vh;
   background-size: 400% 400%;
 }

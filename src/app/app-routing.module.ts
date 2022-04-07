@@ -18,6 +18,7 @@ import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component'
 import { SigninComponent } from './pages/signin/signin.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 const routes: Routes = [
@@ -38,6 +39,11 @@ const routes: Routes = [
       {
         path: 'contact',
         component: ContactComponent,
+        canActivate: [SigninGuard]
+      },
+      {
+        path: 'about',
+        component: AboutComponent,
         canActivate: [SigninGuard]
       }
     ]

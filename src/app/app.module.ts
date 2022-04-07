@@ -31,6 +31,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { CreateTaskDialogComponent } from './shared/create-task-dialog/create-task-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MatMenuModule } from '@angular/material/menu';
     SigninComponent,
     NotFoundComponent,
     ContactComponent,
-    CreateTaskDialogComponent
+    CreateTaskDialogComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

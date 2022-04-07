@@ -49,11 +49,11 @@ nav {
 
   .footer {
     bottom: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     background-color: #EDE7F6;
     color:#311B92;
-    border-bottom: 1px solid #311B92;
+
   }
 
   .footer-content {

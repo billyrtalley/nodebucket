@@ -29,6 +29,8 @@ export class HomeComponent implements OnInit {
   done: Item[];
   empId: number;
 
+// using findAllTasks to display the employee's to do and done tasks
+
   constructor(private taskService: TaskService, private cookieService: CookieService, private dialog: MatDialog) {
     this.empId = parseInt(this.cookieService.get('session_user'), 10);
 
@@ -58,6 +60,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+// create a new task via dialog and pairs the new task to the employee
 
   openCreateTaskDialog() {
     const dialogRef = this.dialog.open(CreateTaskDialogComponent, {

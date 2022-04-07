@@ -19,7 +19,7 @@
   .task {
     display: block;
     color: #311B92;
-    background: #EDE7F6;
+    background: #F0F0F0;
     border: 1px solid #311B92;
     overflow: hidden;
     min-height: 68px;
@@ -38,6 +38,10 @@
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
+}
+
+mat-card, mat-card-content {
+  background-color: #EDE7F6;
 }
 
 

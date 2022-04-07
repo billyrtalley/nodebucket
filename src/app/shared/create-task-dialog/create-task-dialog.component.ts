@@ -26,11 +26,14 @@ export class CreateTaskDialogComponent implements OnInit {
   ngOnInit(): void {
 
     this.taskForm = this.fb.group({
+//text name has to match the matInput formControlName from the create task html
       text: [null, Validators.compose([Validators.required])]
     })
   }
 
   createTask() {
+
+//taskform is from the formGroup name on the html
     this.dialogRef.close(this.taskForm.value);
   }
 
