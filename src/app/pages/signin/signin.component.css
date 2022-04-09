@@ -1,4 +1,10 @@
-
+h1  {
+  color: #311B92;
+  margin-top: 50px;
+  margin-left: 25px;
+  font-size: 48px;
+  text-align: center;
+}
 
 .signin-container {
   width: 35%;

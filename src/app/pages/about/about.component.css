@@ -1,7 +1,7 @@
 h1  {
   color: #311B92;
   margin-top: 50px;
-  margin-left: 30px;
+  margin-left: 25px;
   font-size: 48px;
 }
 
@@ -12,6 +12,8 @@ h1  {
 
 h2 {
   color: #311B92;
+  font-size: 24px;
+  margin-left: 25px;
 
 }
 
@@ -19,6 +21,7 @@ p {
   color: #311B92;
   font-size: 18px;
   max-width: 70%;
+  margin-left: 10px;
 
 }
 
@@ -26,8 +29,7 @@ p {
 .card-container {
   margin-top: 25px;
   max-width: 80%;
-  justify-content: center;
-  margin-left: 30px;
+
 }
 
 
@@ -40,6 +42,6 @@ p {
 
 mat-card {
   background-color: #EDE7F6;
-  width: 25%;
+  width: 22%;
 
 }

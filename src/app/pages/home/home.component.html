@@ -20,6 +20,7 @@
       >
         Create New Task
       </button>
+      <!-- <p-messages [(value)]="addedTask"></p-messages> -->
     </div>
   </div>
 
@@ -35,14 +36,21 @@
             complete</mat-card-subtitle>
 
           <mat-card-content>
-            <div class="task">
-              <div *ngFor="let item of toDo">
+            <div class="task" cdkDropList #toDoList="cdkDropList" [cdkDropListData]="toDo" [cdkDropListConnectedTo]="[doneList]" (cdkDropListDropped)="drop($event)">
+              <div *ngFor="let item of toDo" cdkDrag>
                 <mat-card class="mat-elevation-z2 task-card">
                   <mat-card-content>
                     <div fxLayout="row">
                       <div fxFlex>
                         {{ item.taskName }}
                       </div>
+
+                      <div fxFlex fxLayoutAlign="end">
+                        <button mat-icon-button (click)="deleteTask(item._id)">
+                          <mat-icon color="warn">delete</mat-icon>
+                        </button>
+                      </div>
+
                     </div>
                   </mat-card-content>
                 </mat-card>
@@ -57,13 +65,20 @@
           <mat-card-title>Done</mat-card-title>
 
           <mat-card-content>
-            <div class="task">
-              <div *ngFor="let item of done">
+            <div class="task" cdkDropList #doneList="cdkDropList" [cdkDropListData]="done" [cdkDropListConnectedTo]="[toDoList]" (cdkDropListDropped)="drop($event)">
+              <div *ngFor="let item of done" cdkDrag>
                 <mat-card class="mat-elevation-z2 task-card">
                   <div fxLayout="row">
                     <div fxFlex>
                       {{ item.taskName }}
                     </div>
+
+                    <div fxFlex fxLayoutAlign="end">
+                      <button mat-icon-button (click)="deleteTask(item._id)">
+                        <mat-icon color="warn">delete</mat-icon>
+                      </button>
+                    </div>
+
                   </div>
                 </mat-card>
               </div>
@@ -73,4 +88,5 @@
       </div>
     </div>
   </div>
+
 </div>

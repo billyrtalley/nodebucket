@@ -32,6 +32,9 @@ import { CreateTaskDialogComponent } from './shared/create-task-dialog/create-ta
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatMenuModule } from '@angular/material/menu';
 import { AboutComponent } from './pages/about/about.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
 
 @NgModule({
   declarations: [
@@ -61,6 +64,9 @@ import { AboutComponent } from './pages/about/about.component';
     MatInputModule,
     MatDialogModule,
     MatMenuModule,
+    DragDropModule,
+    MessagesModule,
+    MessageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
