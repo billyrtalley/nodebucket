@@ -1,3 +1,13 @@
+/*
+============================================
+; Title: nodebucket Sprint3
+; Author: Professor Krasso
+; Date: April 10, 2022
+; Modified By: William Talley
+; Description: nodebucket contact.component file
+;===========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

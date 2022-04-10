@@ -1,9 +1,11 @@
 /*
-Author: Professor Krasso
-Modified by: William Talley
-Date: April 7, 2022
-Title: base-response.js
-Description: creating a response class to streamline error messaging in the APIs
+============================================
+; Title: nodebucket Sprint3
+; Author: Professor Krasso
+; Date: April 10, 2022
+; Modified By: William Talley
+; Description: nodebucket base-response.js
+;===========================================
 */
 
 //class for all error messages
