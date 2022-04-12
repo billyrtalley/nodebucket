@@ -20,8 +20,7 @@ import {
   moveItemInArray,
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
-import {Message } from 'primeng//api';
-import { MessageService } from 'primeng/api';
+
 
 @Component({
   selector: 'app-home',
@@ -33,7 +32,8 @@ export class HomeComponent implements OnInit {
   toDo: Item[];
   done: Item[];
   empId: number;
-  addedTask: Message[];
+
+
 
   // using findAllTasks to display the employee's to do and done tasks
 
@@ -94,7 +94,7 @@ export class HomeComponent implements OnInit {
           () => {
             this.toDo = this.employee.toDo;
             this.done = this.employee.done;
-            this.addedTask.push({severity: 'info', summary: 'info message', detail: 'New task added'})
+
           }
         );
       }
