@@ -13,6 +13,8 @@ const Employee = require('../models/employee');
 const router = express.Router();
 const BaseResponse = require('../models/base-response')
 
+let employeeResponse = new BaseResponse()
+
 /**
  * API(s) go here...separated the apis from the app.js file to clean up the files
  * findEmployeeById

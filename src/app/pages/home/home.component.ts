@@ -141,13 +141,14 @@ export class HomeComponent implements OnInit {
     );
   }
 
-  deleteTask(taskId: string) {
+  deleteTask(taskId: string): void {
     if (confirm('Are you sure you want to delete this task?')) {
-      if(taskId) {
+      if (taskId) {
         console.log(`Task item: ${taskId} was deleted`);
-        this.taskService.deleteTask(this.empId, taskId).subscribe(res => {
+        this.taskService.deleteTask(this.empId, taskId).subscribe(
+          (res) => {
           this.employee = res.data;
-        }, err => {
+        }, (err) => {
           console.log(err);
         }, () => {
           this.toDo = this.employee.toDo;
